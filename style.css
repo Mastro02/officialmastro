@@ -1,0 +1,95 @@
+body{
+  background-image: url("image/background.jpg");
+}
+
+.header{
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: fixed;
+  top: 0;
+	left: 0;
+}
+
+.container{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.bar4 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: -11px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 8px) ;
+  transform: rotate(-45deg) translate(-4px, 8px) ;
+}
+
+/* Fade second bar */
+.change .bar2 {
+  -webkit-transform: rotate(45deg) translate(-4px, 0px) ;
+  transform: rotate(45deg) translate(-4px, 0px);
+}
+
+/* Rotate third bar */
+.change .bar3 {
+  -webkit-transform: rotate(90deg) translate(-10px, 16px) ;
+  transform: rotate(90deg) translate(-10px, 16px) ;
+}
+/* Rotate last bar */
+.change .bar4 {
+  -webkit-transform: rotate(90deg) translate(-10px, -16px) ;
+  transform: rotate(90deg) translate(-10px, -16px) ;
+}
+
+a {
+      text-decoration:none;
+   }
+
+.menu {
+  margin: 25px 20px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 66px;
+  left: 0;
+  word-spacing: 400px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  display: none;
+}
+
+.footer {
+  background-position: bottom;
+  padding: 12px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  bottom: 0px; 
+  left: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #container, #header, #content, #footer {
+    float: none;
+    width: auto;
+}
